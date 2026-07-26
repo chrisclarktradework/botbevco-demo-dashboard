@@ -231,7 +231,7 @@ footer .route { color: var(--accent-gold-bright); font-weight: 600; }
 .gantt-track { position: relative; height: 38px; border-bottom: 1px solid rgba(123,91,58,0.25); background: repeating-linear-gradient(90deg, transparent, transparent calc(100%/24 - 1px), rgba(123,91,58,0.2) calc(100%/24 - 1px), rgba(123,91,58,0.2) calc(100%/24)); }
 .gantt-block { position: absolute; top: 5px; bottom: 5px; border-radius: 3px; display: flex; align-items: center; padding: 0 6px; font-size: 10px; color: var(--on-color); font-weight: 600; overflow: hidden; white-space: nowrap; }
 .gantt-block.base { background: linear-gradient(90deg, #D4A853, #B8860B); color: #2D2015; }
-.gantt-block.cream { background: linear-gradient(90deg, #A26769, #6B5944); }
+.gantt-block.slurry { background: linear-gradient(90deg, #A26769, #6B5944); }
 .gantt-block.charged { background: linear-gradient(90deg, #50808E, #3a6875); }
 .gantt-block.brewed { background: linear-gradient(90deg, #6E8E45, #3E7142); }
 .gantt-block.cip { background: repeating-linear-gradient(45deg, var(--bg-surface-lt), var(--bg-surface-lt) 4px, var(--bg-surface) 4px, var(--bg-surface) 8px); color: var(--text-muted); font-style: italic; border: 1px dashed var(--border); }
@@ -835,7 +835,7 @@ nav.tabs label:hover{color:#1c5a94}
 
 /* production gantt families, recoloured into the blue set */
 .gantt-block.base{background:linear-gradient(90deg,#2E7FC4,#1c5a94);color:#fff}
-.gantt-block.cream{background:linear-gradient(90deg,#6E7FA8,#4c5c85);color:#fff}
+.gantt-block.slurry{background:linear-gradient(90deg,#6E7FA8,#4c5c85);color:#fff}
 .gantt-block.charged{background:linear-gradient(90deg,#3E9EA8,#2d7681);color:#fff}
 .gantt-block.brewed{background:linear-gradient(90deg,#2E9E6A,#26855a);color:#fff}
 
@@ -897,7 +897,7 @@ footer.live-feed{border-top:1px solid #2E7FC4}
   <label class="theme-toggle" for="theme-dark"><span class="sw"></span>BOARDROOM</label>
   <div class="clock">
     <div class="time" id="clock">12:47:02</div>
-    <div class="date">APRIL 23, 2026</div>
+    <div class="date">JULY 23, 2026</div>
   </div>
 </header>
 
@@ -1046,7 +1046,7 @@ footer.live-feed{border-top:1px solid #2E7FC4}
       <div class="panel-header"><div class="panel-title">EXECUTIVE BRIEFING</div><div class="panel-sub">CEO &middot; CFO &middot; COO QUESTION BANK</div></div>
       <button class="ask-brief-btn" id="briefBtn">&#x25B6; BRIEF ME &middot; SELF-RUNNING EXECUTIVE BRIEFING</button>
       <button class="ask-stop-btn" id="briefStop">&#x25A0; STOP BRIEFING</button>
-      <div class="brief-note">BRIEF ME walks the room through the morning status, the margin leaks, the cream crisis, this week&rsquo;s AI savings and the three numbers for the board. Hands never touch the keyboard.</div>
+      <div class="brief-note">BRIEF ME walks the room through the morning status, the margin leaks, the slurry crisis, this week&rsquo;s AI savings and the three numbers for the board. Hands never touch the keyboard.</div>
       <button class="ask-crit-btn" id="critBtn"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linejoin="round"><path d="M8 2.2 14.6 13.4H1.4Z"/><path d="M8 6.3v3" stroke-linecap="round"/><circle cx="8" cy="11.5" r="0.9" fill="#FFFFFF" stroke="none"/></svg>CRITICAL ALERTS &middot; 2 OPEN</button>
 
       <div class="theme-h">MARGIN AND COST &middot; CFO</div>
@@ -1077,7 +1077,7 @@ footer.live-feed{border-top:1px solid #2E7FC4}
 
       <div class="theme-h">WHAT IF &middot; SCENARIOS</div>
       <div class="ask-qchips">
-        <button class="ask-qchip" data-ask="cream2wk">What happens if the cream shortage lasts two more weeks?</button>
+        <button class="ask-qchip" data-ask="slurry2wk">What happens if the slurry shortage lasts two more weeks?</button>
         <button class="ask-qchip" data-ask="sealed-fill">What if we add a second sealed-fill line?</button>
         <button class="ask-qchip" data-ask="mabd">What if Omnimart moves MABD a day earlier?</button>
       </div>
@@ -1230,7 +1230,7 @@ footer.live-feed{border-top:1px solid #2E7FC4}
 
   <div class="overview-hero">
     <div class="hero-main">
-      <div class="hero-quote">Network is operational at 90.8% OTIF. Week 17 plan is confirmed at 278K cases. Two active disruptions are putting 9.4K cases of customer commitment at risk, with recovery actions in flight.</div>
+      <div class="hero-quote">Network is operational at 90.8% OTIF. Week 30 plan is confirmed at 278K cases. Two active disruptions are putting 9.4K cases of customer commitment at risk, with recovery actions in flight.</div>
       <div class="hero-actions">
         <label class="hero-action urgent" for="tr-disruptions" style="cursor:pointer;display:block;">
           <div class="ha-l">ACTION REQUIRED</div>
@@ -1246,7 +1246,7 @@ footer.live-feed{border-top:1px solid #2E7FC4}
         </label>
         <label class="hero-action" for="tr-horizon" style="cursor:pointer;display:block;">
           <div class="ha-l">PLAN</div>
-          <div class="ha-t">Week 18 production plan opens for review Friday 10:00</div>
+          <div class="ha-t">Week 31 production plan opens for review Friday 10:00</div>
         </label>
       </div>
     </div>
@@ -1319,9 +1319,9 @@ footer.live-feed{border-top:1px solid #2E7FC4}
           </div>
           <div class="gantt-label">RV-L2</div>
           <div class="gantt-track">
-            <div class="gantt-block cream" style="left: 0%; width: 45%;">Viscosity Vice 12oz</div>
+            <div class="gantt-block slurry" style="left: 0%; width: 45%;">Viscosity Vice 12oz</div>
             <div class="gantt-block cip" style="left: 45%; width: 15%;">CIP</div>
-            <div class="gantt-block cream" style="left: 60%; width: 40%;">Piston Porter 8oz</div>
+            <div class="gantt-block slurry" style="left: 60%; width: 40%;">Piston Porter 8oz</div>
             <div class="gantt-now" style="left: 22%;"></div>
           </div>
           <div class="gantt-label">RV-L3</div>
@@ -1523,8 +1523,8 @@ footer.live-feed{border-top:1px solid #2E7FC4}
       <div class="bar" style="margin-bottom: 10px;"><span style="width: 0%;"></span></div>
       <div class="small" style="margin-bottom: 10px;">Idle capacity 12.4K cases if needed</div>
       <div class="tile-stats">
-        <div class="tile-stat"><div class="l">LAST RUN</div><div class="v">Apr 21</div></div>
-        <div class="tile-stat"><div class="l">PM DUE</div><div class="v">Apr 30</div></div>
+        <div class="tile-stat"><div class="l">LAST RUN</div><div class="v">Jul 21</div></div>
+        <div class="tile-stat"><div class="l">PM DUE</div><div class="v">Jul 30</div></div>
         <div class="tile-stat"><div class="l">STATE</div><div class="v">READY</div></div>
       </div>
       <div class="tile-foot">
@@ -1540,7 +1540,7 @@ footer.live-feed{border-top:1px solid #2E7FC4}
       <thead><tr><th>LINE</th><th>STATE AT HANDOFF</th><th>NEXT ACTION</th><th>NOTES FROM SHIFT A</th></tr></thead>
       <tbody>
         <tr><td><strong>RV-L1</strong></td><td><span class="chip good">RUNNING</span> Rusty Nail 1 Gal</td><td>Complete 17.2K case run by 22:00</td><td>Filler 3 intermittent jam, watch closely</td></tr>
-        <tr><td><strong>RV-L2</strong></td><td><span class="chip good">RUNNING</span> Piston Porter 8oz</td><td>CIP after 9.4K cases, then Static Stout 12oz</td><td>Cream temp running 1F warm, vendor PM scheduled Friday</td></tr>
+        <tr><td><strong>RV-L2</strong></td><td><span class="chip good">RUNNING</span> Piston Porter 8oz</td><td>CIP after 9.4K cases, then Static Stout 12oz</td><td>Slurry temp running 1F warm, vendor PM scheduled Friday</td></tr>
         <tr><td><strong>RV-L3</strong></td><td><span class="chip good">RUNNING</span> Voltage Vapor 12oz</td><td>Hold run through end of shift</td><td>Nothing to flag, solid run</td></tr>
         <tr><td><strong>LK-L1</strong></td><td><span class="chip warn">CHANGEOVER</span></td><td>Resume Dr. Prepper 1 Gal at 15:30</td><td>Awaiting 31K gal quality release for Route C-03 base stock</td></tr>
         <tr><td><strong>LK-L2</strong></td><td><span class="chip good">RUNNING</span> Static Stout 12oz</td><td>Finish 2.7K case run by 19:00</td><td>All clean, no issues</td></tr>
@@ -1557,7 +1557,7 @@ footer.live-feed{border-top:1px solid #2E7FC4}
       <div class="fd-head">
         <div>
           <div class="fd-title">RIVERSIDE WORKS &middot; PRODUCTION FLOOR</div>
-          <div class="fd-sub"><span class="fd-pulse"></span>SHIFT A &middot; LIVE &middot; APR 23, 2026</div>
+          <div class="fd-sub"><span class="fd-pulse"></span>SHIFT A &middot; LIVE &middot; JUL 23, 2026</div>
         </div>
         <div></div>
         <div class="fd-plant-tabs">
@@ -1800,9 +1800,9 @@ footer.live-feed{border-top:1px solid #2E7FC4}
         </div>
         <div class="gantt-label">RV-L2</div>
         <div class="gantt-track">
-          <div class="gantt-block cream" style="left: 0%; width: 35%;">Viscosity Vice 12oz</div>
+          <div class="gantt-block slurry" style="left: 0%; width: 35%;">Viscosity Vice 12oz</div>
           <div class="gantt-block cip" style="left: 35%; width: 15%;">CIP 42min</div>
-          <div class="gantt-block cream" style="left: 50%; width: 47%;">Piston Porter 8oz</div>
+          <div class="gantt-block slurry" style="left: 50%; width: 47%;">Piston Porter 8oz</div>
           <div class="gantt-now" style="left: 0%;"></div>
         </div>
         <div class="gantt-label">RV-L3</div>
@@ -1827,7 +1827,7 @@ footer.live-feed{border-top:1px solid #2E7FC4}
       </div>
       <div style="margin-top: 14px; display: flex; gap: 16px; font-size: 11px; color: var(--text-muted); flex-wrap: wrap;">
         <span><span class="chip" style="background: linear-gradient(90deg,#2E7FC4,#1c5a94); color: #16273c;">CORE FUELS</span></span>
-        <span><span class="chip" style="background: linear-gradient(90deg,#6E7FA8,#7385a0); color: #ffffff;">CREAM</span></span>
+        <span><span class="chip" style="background: linear-gradient(90deg,#6E7FA8,#7385a0); color: #ffffff;">SLURRY</span></span>
         <span><span class="chip" style="background: linear-gradient(90deg,#3E9EA8,#2d7681); color: #ffffff;">CHARGED</span></span>
         <span><span class="chip" style="background: linear-gradient(90deg,#2E9E6A,#26855a); color: #ffffff;">BREWED</span></span>
         <span><span class="chip neutral">CHANGEOVER</span></span>
@@ -1855,7 +1855,7 @@ footer.live-feed{border-top:1px solid #2E7FC4}
         <div class="panel-header"><div class="panel-title">CAPACITY BURN &middot; REMAINING SHIFT</div></div>
         <div style="display: grid; gap: 14px; padding: 6px 0;">
           <div><div style="display:flex;justify-content:space-between;font-size:11px;color:var(--text-muted);margin-bottom:4px;"><span>RV-L1 Core fills</span><span class="gold">84% util, 5.1 hrs scheduled</span></div><div class="bar gold"><span style="width:84%;"></span></div></div>
-          <div><div style="display:flex;justify-content:space-between;font-size:11px;color:var(--text-muted);margin-bottom:4px;"><span>RV-L2 cream / core</span><span class="gold">76% util, 4.2 hrs scheduled</span></div><div class="bar gold"><span style="width:76%;"></span></div></div>
+          <div><div style="display:flex;justify-content:space-between;font-size:11px;color:var(--text-muted);margin-bottom:4px;"><span>RV-L2 slurry / core</span><span class="gold">76% util, 4.2 hrs scheduled</span></div><div class="bar gold"><span style="width:76%;"></span></div></div>
           <div><div style="display:flex;justify-content:space-between;font-size:11px;color:var(--text-muted);margin-bottom:4px;"><span>RV-L3 CHARGED</span><span class="gold">93% util, 5.5 hrs scheduled</span></div><div class="bar good"><span style="width:93%;"></span></div></div>
           <div><div style="display:flex;justify-content:space-between;font-size:11px;color:var(--text-muted);margin-bottom:4px;"><span>LK-L1 Core fills</span><span class="gold">79% util, 4.4 hrs scheduled</span></div><div class="bar gold"><span style="width:79%;"></span></div></div>
           <div><div style="display:flex;justify-content:space-between;font-size:11px;color:var(--text-muted);margin-bottom:4px;"><span>LK-L2 brewed</span><span class="gold">62% util, 3.5 hrs scheduled</span></div><div class="bar warn"><span style="width:62%;"></span></div></div>
@@ -1870,7 +1870,7 @@ footer.live-feed{border-top:1px solid #2E7FC4}
   <!-- TODAY -->
   <div class="horizon-view" data-h="today" style="display: none;">
     <div class="panel">
-      <div class="panel-header"><div class="panel-title">TODAY &middot; APR 23 2026 &middot; PLANNED VS ACTUAL</div><div class="panel-sub">LIVE BURN-DOWN</div></div>
+      <div class="panel-header"><div class="panel-title">TODAY &middot; JUL 23 2026 &middot; PLANNED VS ACTUAL</div><div class="panel-sub">LIVE BURN-DOWN</div></div>
       <table class="data">
         <thead><tr><th>LINE</th><th>SKU</th><th class="num">PLAN CASES</th><th class="num">ACTUAL CASES</th><th style="width:28%;">PROGRESS</th><th class="num">DELTA</th><th>STATUS</th></tr></thead>
         <tbody>
@@ -1895,7 +1895,7 @@ footer.live-feed{border-top:1px solid #2E7FC4}
   <!-- WEEK -->
   <div class="horizon-view" data-h="week" style="display: none;">
     <div class="panel">
-      <div class="panel-header"><div class="panel-title">WEEK 17 &middot; APR 20 &rarr; APR 26 &middot; FULL GANTT ACROSS ALL LINES</div><div class="panel-sub">277.8K CASES &middot; 987.2K GAL EQUIVALENTS</div></div>
+      <div class="panel-header"><div class="panel-title">WEEK 30 &middot; JUL 20 &rarr; JUL 26 &middot; FULL GANTT ACROSS ALL LINES</div><div class="panel-sub">277.8K CASES &middot; 987.2K GAL EQUIVALENTS</div></div>
       <div style="display: grid; grid-template-columns: 140px 1fr;">
         <div></div>
         <div class="gantt-header">
@@ -1921,16 +1921,16 @@ footer.live-feed{border-top:1px solid #2E7FC4}
           <div class="gantt-block base" style="left: 73%; width: 25%;">Rusty Nail 1 Gal Omnimart rush</div>
           <div class="gantt-now" style="left: 42%;"></div>
         </div>
-        <div class="gantt-label">RV-L2 (Cream)</div>
+        <div class="gantt-label">RV-L2 (Slurry)</div>
         <div class="gantt-track" style="height: 46px;">
-          <div class="gantt-block cream" style="left: 0%; width: 10%;">Viscosity Vice</div>
+          <div class="gantt-block slurry" style="left: 0%; width: 10%;">Viscosity Vice</div>
           <div class="gantt-block cip" style="left: 10%; width: 3%;">CIP</div>
-          <div class="gantt-block cream" style="left: 13%; width: 14%;">Piston Porter 8oz</div>
-          <div class="gantt-block cream" style="left: 27%; width: 13%;">Viscosity Vice</div>
-          <div class="gantt-block cream" style="left: 40%; width: 15%;">Piston Porter 8oz</div>
-          <div class="gantt-block cream" style="left: 55%; width: 12%;">Viscosity Vice</div>
+          <div class="gantt-block slurry" style="left: 13%; width: 14%;">Piston Porter 8oz</div>
+          <div class="gantt-block slurry" style="left: 27%; width: 13%;">Viscosity Vice</div>
+          <div class="gantt-block slurry" style="left: 40%; width: 15%;">Piston Porter 8oz</div>
+          <div class="gantt-block slurry" style="left: 55%; width: 12%;">Viscosity Vice</div>
           <div class="gantt-block cip" style="left: 67%; width: 3%;">CIP</div>
-          <div class="gantt-block cream" style="left: 70%; width: 28%;">Piston Porter 8oz</div>
+          <div class="gantt-block slurry" style="left: 70%; width: 28%;">Piston Porter 8oz</div>
           <div class="gantt-now" style="left: 42%;"></div>
         </div>
         <div class="gantt-label">RV-L3 (CHARGED)</div>
@@ -1978,47 +1978,47 @@ footer.live-feed{border-top:1px solid #2E7FC4}
   <!-- MONTH -->
   <div class="horizon-view" data-h="month" style="display: none;">
     <div class="panel">
-      <div class="panel-header"><div class="panel-title">APRIL 2026 &middot; MONTH CALENDAR</div><div class="panel-sub">CAPACITY &middot; DEMAND OVERLAY &middot; MAJOR EVENTS</div></div>
+      <div class="panel-header"><div class="panel-title">JULY 2026 &middot; MONTH CALENDAR</div><div class="panel-sub">CAPACITY &middot; DEMAND OVERLAY &middot; MAJOR EVENTS</div></div>
       <div style="display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; font-size: 11px;">
         <div class="hm-header">MON</div><div class="hm-header">TUE</div><div class="hm-header">WED</div><div class="hm-header">THU</div><div class="hm-header">FRI</div><div class="hm-header">SAT</div><div class="hm-header">SUN</div>
 
-        <div style="background: var(--bg-surface); padding: 10px; border-radius: 3px; min-height: 78px; opacity: 0.5;"><div class="small gold">APR 6</div><div class="small">Week 15</div></div>
-        <div style="background: var(--bg-surface); padding: 10px; border-radius: 3px; min-height: 78px; opacity: 0.5;"><div class="small gold">APR 7</div><div class="small">85% util</div></div>
-        <div style="background: var(--bg-surface); padding: 10px; border-radius: 3px; min-height: 78px; opacity: 0.5;"><div class="small gold">APR 8</div><div class="small">88% util</div></div>
-        <div style="background: var(--bg-surface); padding: 10px; border-radius: 3px; min-height: 78px; opacity: 0.5;"><div class="small gold">APR 9</div><div class="small">83% util</div></div>
-        <div style="background: var(--bg-surface); padding: 10px; border-radius: 3px; min-height: 78px; opacity: 0.5;"><div class="small gold">APR 10</div><div class="small">79% util</div></div>
-        <div style="background: var(--bg-surface); padding: 10px; border-radius: 3px; min-height: 78px; opacity: 0.5;"><div class="small gold">APR 11</div><div class="small">Reduced</div></div>
-        <div style="background: var(--bg-surface); padding: 10px; border-radius: 3px; min-height: 78px; opacity: 0.5;"><div class="small gold">APR 12</div><div class="small">Reduced</div></div>
+        <div style="background: var(--bg-surface); padding: 10px; border-radius: 3px; min-height: 78px; opacity: 0.5;"><div class="small gold">JUL 6</div><div class="small">Week 28</div></div>
+        <div style="background: var(--bg-surface); padding: 10px; border-radius: 3px; min-height: 78px; opacity: 0.5;"><div class="small gold">JUL 7</div><div class="small">85% util</div></div>
+        <div style="background: var(--bg-surface); padding: 10px; border-radius: 3px; min-height: 78px; opacity: 0.5;"><div class="small gold">JUL 8</div><div class="small">88% util</div></div>
+        <div style="background: var(--bg-surface); padding: 10px; border-radius: 3px; min-height: 78px; opacity: 0.5;"><div class="small gold">JUL 9</div><div class="small">83% util</div></div>
+        <div style="background: var(--bg-surface); padding: 10px; border-radius: 3px; min-height: 78px; opacity: 0.5;"><div class="small gold">JUL 10</div><div class="small">79% util</div></div>
+        <div style="background: var(--bg-surface); padding: 10px; border-radius: 3px; min-height: 78px; opacity: 0.5;"><div class="small gold">JUL 11</div><div class="small">Reduced</div></div>
+        <div style="background: var(--bg-surface); padding: 10px; border-radius: 3px; min-height: 78px; opacity: 0.5;"><div class="small gold">JUL 12</div><div class="small">Reduced</div></div>
 
-        <div style="background: var(--bg-surface); padding: 10px; border-radius: 3px; min-height: 78px;"><div class="small gold">APR 13</div><div class="bar gold" style="margin: 4px 0;"><span style="width:82%;"></span></div><div class="small">Spring reset week</div></div>
-        <div style="background: var(--bg-surface); padding: 10px; border-radius: 3px; min-height: 78px;"><div class="small gold">APR 14</div><div class="bar gold" style="margin: 4px 0;"><span style="width:85%;"></span></div><div class="small">82.8%</div></div>
-        <div style="background: var(--bg-surface); padding: 10px; border-radius: 3px; min-height: 78px;"><div class="small gold">APR 15</div><div class="bar gold" style="margin: 4px 0;"><span style="width:81%;"></span></div><div class="small">Week 16</div></div>
-        <div style="background: var(--bg-surface); padding: 10px; border-radius: 3px; min-height: 78px;"><div class="small gold">APR 16</div><div class="bar gold" style="margin: 4px 0;"><span style="width:78%;"></span></div><div class="small">78%</div></div>
-        <div style="background: var(--bg-surface); padding: 10px; border-radius: 3px; min-height: 78px;"><div class="small gold">APR 17</div><div class="bar gold" style="margin: 4px 0;"><span style="width:80%;"></span></div><div class="small">CIP window</div></div>
-        <div style="background: var(--bg-surface); padding: 10px; border-radius: 3px; min-height: 78px;"><div class="small gold">APR 18</div><div class="bar warn" style="margin: 4px 0;"><span style="width:42%;"></span></div><div class="small">Weekend</div></div>
-        <div style="background: var(--bg-surface); padding: 10px; border-radius: 3px; min-height: 78px;"><div class="small gold">APR 19</div><div class="bar warn" style="margin: 4px 0;"><span style="width:38%;"></span></div><div class="small">Weekend</div></div>
+        <div style="background: var(--bg-surface); padding: 10px; border-radius: 3px; min-height: 78px;"><div class="small gold">JUL 13</div><div class="bar gold" style="margin: 4px 0;"><span style="width:82%;"></span></div><div class="small">Spring reset week</div></div>
+        <div style="background: var(--bg-surface); padding: 10px; border-radius: 3px; min-height: 78px;"><div class="small gold">JUL 14</div><div class="bar gold" style="margin: 4px 0;"><span style="width:85%;"></span></div><div class="small">82.8%</div></div>
+        <div style="background: var(--bg-surface); padding: 10px; border-radius: 3px; min-height: 78px;"><div class="small gold">JUL 15</div><div class="bar gold" style="margin: 4px 0;"><span style="width:81%;"></span></div><div class="small">Week 29</div></div>
+        <div style="background: var(--bg-surface); padding: 10px; border-radius: 3px; min-height: 78px;"><div class="small gold">JUL 16</div><div class="bar gold" style="margin: 4px 0;"><span style="width:78%;"></span></div><div class="small">78%</div></div>
+        <div style="background: var(--bg-surface); padding: 10px; border-radius: 3px; min-height: 78px;"><div class="small gold">JUL 17</div><div class="bar gold" style="margin: 4px 0;"><span style="width:80%;"></span></div><div class="small">CIP window</div></div>
+        <div style="background: var(--bg-surface); padding: 10px; border-radius: 3px; min-height: 78px;"><div class="small gold">JUL 18</div><div class="bar warn" style="margin: 4px 0;"><span style="width:42%;"></span></div><div class="small">Weekend</div></div>
+        <div style="background: var(--bg-surface); padding: 10px; border-radius: 3px; min-height: 78px;"><div class="small gold">JUL 19</div><div class="bar warn" style="margin: 4px 0;"><span style="width:38%;"></span></div><div class="small">Weekend</div></div>
 
-        <div style="background: var(--bg-surface); padding: 10px; border-radius: 3px; min-height: 78px; border: 1px solid var(--accent-gold);"><div class="small gold">APR 20</div><div class="bar good" style="margin: 4px 0;"><span style="width:94%;"></span></div><div class="small">Week 17 &middot; 84%</div></div>
-        <div style="background: var(--bg-surface); padding: 10px; border-radius: 3px; min-height: 78px; border: 1px solid var(--accent-gold);"><div class="small gold">APR 21</div><div class="bar good" style="margin: 4px 0;"><span style="width:88%;"></span></div><div class="small">84%</div></div>
-        <div style="background: var(--bg-surface); padding: 10px; border-radius: 3px; min-height: 78px; border: 1px solid var(--accent-gold);"><div class="small gold">APR 22</div><div class="bar good" style="margin: 4px 0;"><span style="width:90%;"></span></div><div class="small">85%</div></div>
-        <div style="background: var(--bg-surface); padding: 10px; border-radius: 3px; min-height: 78px; border: 2px solid var(--accent-gold-bright); box-shadow: 0 0 0 2px rgba(46,127,196,0.3);"><div class="small gold">APR 23 &middot; TODAY</div><div class="bar good" style="margin: 4px 0;"><span style="width:87%;"></span></div><div class="small red">Storm risk PM</div></div>
-        <div style="background: var(--bg-surface); padding: 10px; border-radius: 3px; min-height: 78px; border: 1px solid var(--status-warn);"><div class="small gold">APR 24</div><div class="bar bad" style="margin: 4px 0;"><span style="width:96%;"></span></div><div class="small red">Omnimart rush</div></div>
-        <div style="background: var(--bg-surface); padding: 10px; border-radius: 3px; min-height: 78px;"><div class="small gold">APR 25</div><div class="bar warn" style="margin: 4px 0;"><span style="width:58%;"></span></div><div class="small">Weekend</div></div>
-        <div style="background: var(--bg-surface); padding: 10px; border-radius: 3px; min-height: 78px;"><div class="small gold">APR 26</div><div class="bar warn" style="margin: 4px 0;"><span style="width:44%;"></span></div><div class="small">Weekend</div></div>
+        <div style="background: var(--bg-surface); padding: 10px; border-radius: 3px; min-height: 78px; border: 1px solid var(--accent-gold);"><div class="small gold">JUL 20</div><div class="bar good" style="margin: 4px 0;"><span style="width:94%;"></span></div><div class="small">Week 30 &middot; 84%</div></div>
+        <div style="background: var(--bg-surface); padding: 10px; border-radius: 3px; min-height: 78px; border: 1px solid var(--accent-gold);"><div class="small gold">JUL 21</div><div class="bar good" style="margin: 4px 0;"><span style="width:88%;"></span></div><div class="small">84%</div></div>
+        <div style="background: var(--bg-surface); padding: 10px; border-radius: 3px; min-height: 78px; border: 1px solid var(--accent-gold);"><div class="small gold">JUL 22</div><div class="bar good" style="margin: 4px 0;"><span style="width:90%;"></span></div><div class="small">85%</div></div>
+        <div style="background: var(--bg-surface); padding: 10px; border-radius: 3px; min-height: 78px; border: 2px solid var(--accent-gold-bright); box-shadow: 0 0 0 2px rgba(46,127,196,0.3);"><div class="small gold">JUL 23 &middot; TODAY</div><div class="bar good" style="margin: 4px 0;"><span style="width:87%;"></span></div><div class="small red">Storm risk PM</div></div>
+        <div style="background: var(--bg-surface); padding: 10px; border-radius: 3px; min-height: 78px; border: 1px solid var(--status-warn);"><div class="small gold">JUL 24</div><div class="bar bad" style="margin: 4px 0;"><span style="width:96%;"></span></div><div class="small red">Omnimart rush</div></div>
+        <div style="background: var(--bg-surface); padding: 10px; border-radius: 3px; min-height: 78px;"><div class="small gold">JUL 25</div><div class="bar warn" style="margin: 4px 0;"><span style="width:58%;"></span></div><div class="small">Weekend</div></div>
+        <div style="background: var(--bg-surface); padding: 10px; border-radius: 3px; min-height: 78px;"><div class="small gold">JUL 26</div><div class="bar warn" style="margin: 4px 0;"><span style="width:44%;"></span></div><div class="small">Weekend</div></div>
 
-        <div style="background: var(--bg-surface); padding: 10px; border-radius: 3px; min-height: 78px; opacity: 0.75;"><div class="small gold">APR 27</div><div class="bar gold" style="margin: 4px 0;"><span style="width:82%;"></span></div><div class="small">Week 18 plan</div></div>
-        <div style="background: var(--bg-surface); padding: 10px; border-radius: 3px; min-height: 78px; opacity: 0.75;"><div class="small gold">APR 28</div><div class="bar gold" style="margin: 4px 0;"><span style="width:85%;"></span></div><div class="small">Kestrel Pack in</div></div>
-        <div style="background: var(--bg-surface); padding: 10px; border-radius: 3px; min-height: 78px; opacity: 0.75;"><div class="small gold">APR 29</div><div class="bar gold" style="margin: 4px 0;"><span style="width:86%;"></span></div><div class="small">School pickup</div></div>
-        <div style="background: var(--bg-surface); padding: 10px; border-radius: 3px; min-height: 78px; opacity: 0.75;"><div class="small gold">APR 30</div><div class="bar gold" style="margin: 4px 0;"><span style="width:84%;"></span></div><div class="small">LK-L3 PM</div></div>
-        <div style="background: rgba(46,127,196,0.08); padding: 10px; border-radius: 3px; min-height: 78px; opacity: 0.45;"><div class="small gold">MAY 1</div><div class="small">May opens</div></div>
-        <div style="background: rgba(46,127,196,0.08); padding: 10px; border-radius: 3px; min-height: 78px; opacity: 0.45;"><div class="small gold">MAY 2</div></div>
-        <div style="background: rgba(46,127,196,0.08); padding: 10px; border-radius: 3px; min-height: 78px; opacity: 0.45;"><div class="small gold">MAY 3</div><div class="small">Founders Day wk</div></div>
+        <div style="background: var(--bg-surface); padding: 10px; border-radius: 3px; min-height: 78px; opacity: 0.75;"><div class="small gold">JUL 27</div><div class="bar gold" style="margin: 4px 0;"><span style="width:82%;"></span></div><div class="small">Week 31 plan</div></div>
+        <div style="background: var(--bg-surface); padding: 10px; border-radius: 3px; min-height: 78px; opacity: 0.75;"><div class="small gold">JUL 28</div><div class="bar gold" style="margin: 4px 0;"><span style="width:85%;"></span></div><div class="small">Kestrel Pack in</div></div>
+        <div style="background: var(--bg-surface); padding: 10px; border-radius: 3px; min-height: 78px; opacity: 0.75;"><div class="small gold">JUL 29</div><div class="bar gold" style="margin: 4px 0;"><span style="width:86%;"></span></div><div class="small">School pickup</div></div>
+        <div style="background: var(--bg-surface); padding: 10px; border-radius: 3px; min-height: 78px; opacity: 0.75;"><div class="small gold">JUL 30</div><div class="bar gold" style="margin: 4px 0;"><span style="width:84%;"></span></div><div class="small">LK-L3 PM</div></div>
+        <div style="background: rgba(46,127,196,0.08); padding: 10px; border-radius: 3px; min-height: 78px; opacity: 0.45;"><div class="small gold">JUL 31</div><div class="small">Aug opens</div></div>
+        <div style="background: rgba(46,127,196,0.08); padding: 10px; border-radius: 3px; min-height: 78px; opacity: 0.45;"><div class="small gold">AUG 1</div></div>
+        <div style="background: rgba(46,127,196,0.08); padding: 10px; border-radius: 3px; min-height: 78px; opacity: 0.45;"><div class="small gold">AUG 2</div><div class="small">Founders Day wk</div></div>
       </div>
     </div>
     <div class="grid-3" style="margin-top: 14px;">
       <div class="panel"><div class="panel-header"><div class="panel-title">MONTH AT A GLANCE</div></div><div class="small">Cases planned: <span class="big gold">1.12M</span></div><div class="small" style="margin-top:6px;">Gal equivalents: <span class="big gold">4.31M</span></div><div class="small" style="margin-top:6px;">Avg utilization: <span class="big gold">84.2%</span></div><div class="small" style="margin-top:6px;">Changeovers: <span class="big gold">142</span></div><div class="small" style="margin-top:6px;">CIP cycles: <span class="big gold">28</span></div></div>
-      <div class="panel"><div class="panel-header"><div class="panel-title">DEMAND PEAKS</div></div><div class="small"><strong class="gold">Apr 24 Fri</strong> Omnimart 15K case rush</div><div class="small" style="margin-top:6px;"><strong class="gold">Apr 29 Wed</strong> Academy node pickup doubled</div><div class="small" style="margin-top:6px;"><strong class="gold">May 8 Fri</strong> Founders Day cream +32%</div><div class="small" style="margin-top:6px;"><strong class="gold">May 25 Mon</strong> Long Weekend refuelling surge</div></div>
-      <div class="panel"><div class="panel-header"><div class="panel-title">MAINTENANCE &amp; CIP</div></div><div class="small"><strong class="amber">Apr 30</strong> LK-L3 scheduled PM 4 hrs</div><div class="small" style="margin-top:6px;"><strong class="amber">May 4</strong> RV-L2 cream filler overhaul</div><div class="small" style="margin-top:6px;"><strong class="amber">May 15</strong> Full site CIP weekend</div><div class="small" style="margin-top:6px;"><strong class="amber">May 22</strong> CHARGED sterilizer calibration</div></div>
+      <div class="panel"><div class="panel-header"><div class="panel-title">DEMAND PEAKS</div></div><div class="small"><strong class="gold">Jul 24 Fri</strong> Omnimart 15K case rush</div><div class="small" style="margin-top:6px;"><strong class="gold">Jul 29 Wed</strong> Academy node pickup doubled</div><div class="small" style="margin-top:6px;"><strong class="gold">Aug 7 Fri</strong> Founders Day slurry +32%</div><div class="small" style="margin-top:6px;"><strong class="gold">Aug 24 Mon</strong> Long Weekend refuelling surge</div></div>
+      <div class="panel"><div class="panel-header"><div class="panel-title">MAINTENANCE &amp; CIP</div></div><div class="small"><strong class="amber">Jul 30</strong> LK-L3 scheduled PM 4 hrs</div><div class="small" style="margin-top:6px;"><strong class="amber">Aug 3</strong> RV-L2 slurry filler overhaul</div><div class="small" style="margin-top:6px;"><strong class="amber">Aug 14</strong> Full site CIP weekend</div><div class="small" style="margin-top:6px;"><strong class="amber">Aug 21</strong> CHARGED sterilizer calibration</div></div>
     </div>
   </div>
 
@@ -2045,10 +2045,10 @@ footer.live-feed{border-top:1px solid #2E7FC4}
   <div class="kpi-row">
     <div class="kpi good"><div class="label">ON-HAND TODAY</div><div class="value">19.3K<span class="unit">cases</span></div><div class="delta">Across 4 locations</div></div>
     <div class="kpi"><div class="label">DAYS COVER</div><div class="value">4.1<span class="unit">d</span></div><div class="delta">Safety threshold: 3.0d</div></div>
-    <div class="kpi good"><div class="label">WK 17 PRODUCTION</div><div class="value">56.2K<span class="unit">cs</span></div><div class="delta">4 batches planned</div></div>
-    <div class="kpi warn"><div class="label">WK 17 DEMAND</div><div class="value">58.1K<span class="unit">cs</span></div><div class="delta down">Net -1.9K (draw-down)</div></div>
+    <div class="kpi good"><div class="label">WK 30 PRODUCTION</div><div class="value">56.2K<span class="unit">cs</span></div><div class="delta">4 batches planned</div></div>
+    <div class="kpi warn"><div class="label">WK 30 DEMAND</div><div class="value">58.1K<span class="unit">cs</span></div><div class="delta down">Net -1.9K (draw-down)</div></div>
     <div class="kpi bad"><div class="label">OTIF 30D</div><div class="value">91.6<span class="unit">%</span></div><div class="delta down">-3.4pp vs 95% target</div></div>
-    <div class="kpi"><div class="label">BASE REQ WK 17</div><div class="value">224.8K<span class="unit">gal</span></div><div class="delta">From 62 reclamation yards</div></div>
+    <div class="kpi"><div class="label">BASE REQ WK 30</div><div class="value">224.8K<span class="unit">gal</span></div><div class="delta">From 62 reclamation yards</div></div>
   </div>
 
   <div class="grid-2">
@@ -2093,7 +2093,7 @@ footer.live-feed{border-top:1px solid #2E7FC4}
     </div>
 
     <div class="panel">
-      <div class="panel-header"><div class="panel-title">CUSTOMER COMMITMENTS &middot; WEEK 17</div></div>
+      <div class="panel-header"><div class="panel-title">CUSTOMER COMMITMENTS &middot; WEEK 30</div></div>
       <table class="data">
         <thead><tr><th>CUSTOMER</th><th class="num">COMMITTED</th><th class="num">FORECAST</th><th class="num">RISK</th><th>STATUS</th></tr></thead>
         <tbody>
@@ -2117,12 +2117,12 @@ footer.live-feed{border-top:1px solid #2E7FC4}
       <table class="data">
         <thead><tr><th>DAY</th><th>PLANT / LINE</th><th class="num">CASES</th><th class="num">GAL</th><th>STATUS</th></tr></thead>
         <tbody>
-          <tr><td>Mon Apr 20</td><td>RV-L1</td><td class="num">18,500</td><td class="num">74,000</td><td><span class="chip good">DONE</span></td></tr>
-          <tr><td>Wed Apr 22</td><td>LK-L1</td><td class="num">8,200</td><td class="num">32,800</td><td><span class="chip good">DONE</span></td></tr>
-          <tr><td>Thu Apr 23</td><td>RV-L1</td><td class="num">12,400</td><td class="num">49,600</td><td><span class="chip warn">QUEUED 13:12</span></td></tr>
-          <tr><td>Fri Apr 24</td><td>RV-L1 + LK-L3</td><td class="num">17,100</td><td class="num">68,400</td><td><span class="chip info">PLANNED (rush)</span></td></tr>
+          <tr><td>Mon Jul 20</td><td>RV-L1</td><td class="num">18,500</td><td class="num">74,000</td><td><span class="chip good">DONE</span></td></tr>
+          <tr><td>Wed Jul 22</td><td>LK-L1</td><td class="num">8,200</td><td class="num">32,800</td><td><span class="chip good">DONE</span></td></tr>
+          <tr><td>Thu Jul 23</td><td>RV-L1</td><td class="num">12,400</td><td class="num">49,600</td><td><span class="chip warn">QUEUED 13:12</span></td></tr>
+          <tr><td>Fri Jul 24</td><td>RV-L1 + LK-L3</td><td class="num">17,100</td><td class="num">68,400</td><td><span class="chip info">PLANNED (rush)</span></td></tr>
         </tbody>
-        <tfoot><tr><td colspan="2">Week 17 total</td><td class="num gold">56,200</td><td class="num gold">224,800</td><td></td></tr></tfoot>
+        <tfoot><tr><td colspan="2">Week 30 total</td><td class="num gold">56,200</td><td class="num gold">224,800</td><td></td></tr></tfoot>
       </table>
     </div>
 
@@ -2211,13 +2211,13 @@ footer.live-feed{border-top:1px solid #2E7FC4}
     <div class="ext-card">
       <div class="ext-head"><div class="ext-icon">&#x1F3EB;</div><div class="ext-name">ACADEMY CALENDAR</div></div>
       <div class="ext-val">3 NODES</div>
-      <div class="ext-note">Babine Lake Academy spring reset ends Apr 28, volume doubles Wed Apr 29. Ironbelt Academy Friday early release.</div>
+      <div class="ext-note">Babine Lake Academy spring reset ends Jul 28, volume doubles Wed Jul 29. Ironbelt Academy Friday early release.</div>
       <div class="risk-bar"><span class="on"></span><span class="on"></span><span></span><span></span><span></span></div>
     </div>
     <div class="ext-card">
       <div class="ext-head"><div class="ext-icon">&#x1F6D2;</div><div class="ext-name">RETAIL PROMOS</div></div>
       <div class="ext-val">2 ACTIVE</div>
-      <div class="ext-note">Voltway Gallon BOGO runs Apr 24-27. Circuit Central 2-pack promo Apr 20-26. Demand uplift baked into plan.</div>
+      <div class="ext-note">Voltway Gallon BOGO runs Jul 24-27. Circuit Central 2-pack promo Jul 20-26. Demand uplift baked into plan.</div>
       <div class="risk-bar"><span class="on"></span><span class="on"></span><span></span><span></span><span></span></div>
     </div>
     <div class="ext-card">
@@ -2241,7 +2241,7 @@ footer.live-feed{border-top:1px solid #2E7FC4}
     <div class="ext-card">
       <div class="ext-head"><div class="ext-icon">&#x1F3E0;</div><div class="ext-name">CONSUMER DEMAND</div></div>
       <div class="ext-val">STEADY</div>
-      <div class="ext-note">Category scan data flat week over week. No unusual category shifts. Founders Day ramp starts May 4.</div>
+      <div class="ext-note">Category scan data flat week over week. No unusual category shifts. Founders Day ramp starts Aug 3.</div>
       <div class="risk-bar low"><span class="on"></span><span></span><span></span><span></span><span></span></div>
     </div>
   </div>
@@ -2305,7 +2305,7 @@ footer.live-feed{border-top:1px solid #2E7FC4}
       <div class="when"><strong>09:15</strong><br><span class="small">Monday</span></div>
       <div>
         <div class="title">Omnimart rush order added, 15K cases Rusty Nail 1 Gal</div>
-        <div class="desc">Omnimart Babine Lake DC submitted emergency restock. Required delivery Friday Apr 24 by 14:00. Current capacity books 13.2K.</div>
+        <div class="desc">Omnimart Babine Lake DC submitted emergency restock. Required delivery Friday Jul 24 by 14:00. Current capacity books 13.2K.</div>
         <div style="margin-top: 6px;"><span class="chip warn">HIGH</span> <span class="chip neutral">COMMERCIAL OWNER</span> <span class="chip neutral">DOLORES A.</span></div>
       </div>
       <div class="impact"><span class="small">IMPACT</span><strong>-1.8K gap</strong><span class="small">if no action</span></div>
@@ -2391,12 +2391,12 @@ footer.live-feed{border-top:1px solid #2E7FC4}
         <div class="val" id="s6v">0%</div>
       </div>
       <div class="slider-row">
-        <label>Cream supply variance</label>
+        <label>Graphite slurry variance</label>
         <input type="range" min="-40" max="40" value="0" id="s7" oninput="runSim()"/>
         <div class="val" id="s7v">0%</div>
       </div>
       <div class="slider-row">
-        <label>RV-L2 cream line downtime</label>
+        <label>RV-L2 slurry line downtime</label>
         <input type="range" min="0" max="16" value="0" id="s8" oninput="runSim()"/>
         <div class="val" id="s8v">0 hrs</div>
       </div>
@@ -2405,9 +2405,9 @@ footer.live-feed{border-top:1px solid #2E7FC4}
       <div style="display: flex; gap: 8px; flex-wrap: wrap;">
         <button style="background: var(--accent-gold); color: var(--bg-deep); border: none; padding: 8px 14px; border-radius: 3px; font-weight: 600; letter-spacing: 0.08em;" onclick="loadPreset('storm')">STORM</button>
         <button style="background: var(--bg-surface); color: var(--accent-cream); border: 1px solid var(--border); padding: 8px 14px; border-radius: 3px; letter-spacing: 0.08em;" onclick="loadPreset('rush')">RUSH ORDER</button>
-        <button style="background: var(--bg-surface); color: var(--accent-cream); border: 1px solid var(--border); padding: 8px 14px; border-radius: 3px; letter-spacing: 0.08em;" onclick="loadPreset('cream-short')">CREAM SHORTAGE</button>
-        <button style="background: var(--bg-surface); color: var(--accent-cream); border: 1px solid var(--border); padding: 8px 14px; border-radius: 3px; letter-spacing: 0.08em;" onclick="loadPreset('cream-glut')">CREAM OVERSUPPLY</button>
-        <button style="background: var(--bg-surface); color: var(--accent-cream); border: 1px solid var(--border); padding: 8px 14px; border-radius: 3px; letter-spacing: 0.08em;" onclick="loadPreset('cream-line')">CREAM LINE FAILURE</button>
+        <button style="background: var(--bg-surface); color: var(--accent-cream); border: 1px solid var(--border); padding: 8px 14px; border-radius: 3px; letter-spacing: 0.08em;" onclick="loadPreset('slurry-short')">SLURRY SHORTAGE</button>
+        <button style="background: var(--bg-surface); color: var(--accent-cream); border: 1px solid var(--border); padding: 8px 14px; border-radius: 3px; letter-spacing: 0.08em;" onclick="loadPreset('slurry-glut')">SLURRY OVERSUPPLY</button>
+        <button style="background: var(--bg-surface); color: var(--accent-cream); border: 1px solid var(--border); padding: 8px 14px; border-radius: 3px; letter-spacing: 0.08em;" onclick="loadPreset('slurry-line')">SLURRY LINE FAILURE</button>
         <button style="background: var(--bg-surface); color: var(--accent-cream); border: 1px solid var(--border); padding: 8px 14px; border-radius: 3px; letter-spacing: 0.08em;" onclick="loadPreset('line-down')">LINE DOWN &middot; RV-L1</button>
         <button style="background: var(--bg-surface); color: var(--accent-cream); border: 1px solid var(--border); padding: 8px 14px; border-radius: 3px; letter-spacing: 0.08em;" onclick="loadPreset('reset')">RESET</button>
       </div>
@@ -2514,9 +2514,9 @@ footer.live-feed{border-top:1px solid #2E7FC4}
   <div class="panel" style="border-left: 4px solid var(--accent-gold);">
     <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 14px;">
       <div>
-        <div class="small" style="color: var(--accent-gold); letter-spacing: 0.15em;">CHANGE ORDER &middot; CO-20260423-004</div>
-        <h2 style="font-family: Georgia, serif; color: var(--accent-cream); font-size: 20px; margin: 6px 0;">Week 17 Schedule Revision &middot; Omnimart Rush &amp; Route D-03 Recovery</h2>
-        <div class="small">Issued by Dolores Abernathy (Commercial) &middot; Approved by Optimus Prime (Ops) &middot; Apr 23 2026, 12:40</div>
+        <div class="small" style="color: var(--accent-gold); letter-spacing: 0.15em;">CHANGE ORDER &middot; CO-20260723-004</div>
+        <h2 style="font-family: Georgia, serif; color: var(--accent-cream); font-size: 20px; margin: 6px 0;">Week 30 Schedule Revision &middot; Omnimart Rush &amp; Route D-03 Recovery</h2>
+        <div class="small">Issued by Dolores Abernathy (Commercial) &middot; Approved by Optimus Prime (Ops) &middot; Jul 23 2026, 12:40</div>
       </div>
       <div><span class="chip good" style="padding: 8px 14px; font-size: 11px;">APPROVED &middot; LIVE</span></div>
     </div>
@@ -2571,8 +2571,8 @@ footer.live-feed{border-top:1px solid #2E7FC4}
         <tbody>
           <tr><td>004</td><td>Today 12:40</td><td>Omnimart rush + Route D-03 recovery</td><td class="num amber">OTIF -0.9pp</td></tr>
           <tr><td>003</td><td>Tue 09:18</td><td>RV-L3 CHARGED sequence reordered after filler fault</td><td class="num green">Neutral</td></tr>
-          <tr><td>002</td><td>Mon 14:22</td><td>Babine Lake academy nodes doubled Apr 29</td><td class="num amber">+5K cases wk 18</td></tr>
-          <tr><td>001</td><td>Fri 15:40</td><td>Gearmart promo pull-in Wk 17</td><td class="num">+2.4K cases</td></tr>
+          <tr><td>002</td><td>Mon 14:22</td><td>Babine Lake academy nodes doubled Jul 29</td><td class="num amber">+5K cases wk 31</td></tr>
+          <tr><td>001</td><td>Fri 15:40</td><td>Gearmart promo pull-in Wk 30</td><td class="num">+2.4K cases</td></tr>
         </tbody>
       </table>
     </div>
@@ -2606,7 +2606,7 @@ footer.live-feed{border-top:1px solid #2E7FC4}
   </div>
 
   <div class="panel">
-    <div class="panel-header"><div class="panel-title">WEEK 17 &middot; COMMITMENT CONFIDENCE BY CUSTOMER AND DAY</div><div class="panel-sub">CLICK A CELL TO INSPECT</div></div>
+    <div class="panel-header"><div class="panel-title">WEEK 30 &middot; COMMITMENT CONFIDENCE BY CUSTOMER AND DAY</div><div class="panel-sub">CLICK A CELL TO INSPECT</div></div>
     <div class="heatmap" style="grid-template-columns: 140px repeat(7, 1fr);">
       <div class="hm-header"></div>
       <div class="hm-header">MON 20</div><div class="hm-header">TUE 21</div><div class="hm-header">WED 22</div><div class="hm-header">THU 23</div><div class="hm-header">FRI 24</div><div class="hm-header">SAT 25</div><div class="hm-header">SUN 26</div>
@@ -2676,7 +2676,7 @@ footer.live-feed{border-top:1px solid #2E7FC4}
   </div>
 
   <div class="panel">
-    <div class="panel-header"><div class="panel-title">VOLTWAY &middot; FRI APR 24 &middot; INSPECTOR</div><div class="panel-sub">AUTO-OPENED FROM RED CELL</div></div>
+    <div class="panel-header"><div class="panel-title">VOLTWAY &middot; FRI JUL 24 &middot; INSPECTOR</div><div class="panel-sub">AUTO-OPENED FROM RED CELL</div></div>
     <div class="grid-3">
       <div>
         <div class="small" style="color: var(--accent-gold); letter-spacing: 0.15em; margin-bottom: 8px;">WHY RED</div>
@@ -2944,7 +2944,7 @@ footer.live-feed{border-top:1px solid #2E7FC4}
       <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 6px; font-size: 10px; margin-top: 6px;">
         <div><span style="display:inline-block;width:10px;height:10px;background:#7FB0DD;margin-right:6px;vertical-align:middle;"></span>Fluid base stock <span style="color:var(--accent-gold);float:right;">52%</span></div>
         <div><span style="display:inline-block;width:10px;height:10px;background:#2E9E6A;margin-right:6px;vertical-align:middle;"></span>CORE <span style="color:var(--accent-gold);float:right;">24%</span></div>
-        <div><span style="display:inline-block;width:10px;height:10px;background:#9fb4c9;margin-right:6px;vertical-align:middle;"></span>Cream <span style="color:var(--accent-gold);float:right;">15%</span></div>
+        <div><span style="display:inline-block;width:10px;height:10px;background:#9fb4c9;margin-right:6px;vertical-align:middle;"></span>Slurry <span style="color:var(--accent-gold);float:right;">15%</span></div>
         <div><span style="display:inline-block;width:10px;height:10px;background:#C0432A;margin-right:6px;vertical-align:middle;"></span>Brewed <span style="color:var(--accent-gold);float:right;">9%</span></div>
       </div>
     </div>
@@ -3112,7 +3112,7 @@ footer.live-feed{border-top:1px solid #2E7FC4}
     <div class="panel">
       <div class="panel-header">
         <div class="panel-title">OTIF MONTH TREND</div>
-        <div class="panel-sub">DAILY &middot; APR 1 TO APR 23</div>
+        <div class="panel-sub">DAILY &middot; JUL 1 TO JUL 23</div>
       </div>
       <svg viewBox="0 0 420 200" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: 200px;">
         <line x1="0" y1="30" x2="420" y2="30" stroke="#425468" stroke-width="0.5" stroke-dasharray="2 3"/>
@@ -3128,7 +3128,7 @@ footer.live-feed{border-top:1px solid #2E7FC4}
           <circle cx="20" cy="90" r="2"/><circle cx="110" cy="75" r="2"/><circle cx="164" cy="78" r="2"/><circle cx="236" cy="88" r="2"/><circle cx="290" cy="95" r="2"/><circle cx="398" cy="122" r="3" stroke="#dbe3ee" stroke-width="1"/>
         </g>
         <g fill="#5A83AC" font-family="Arial" font-size="8">
-          <text x="20" y="195">APR 1</text><text x="164" y="195">APR 8</text><text x="290" y="195">APR 15</text><text x="380" y="195">APR 22</text>
+          <text x="20" y="195">JUL 1</text><text x="164" y="195">JUL 8</text><text x="290" y="195">JUL 15</text><text x="380" y="195">JUL 22</text>
         </g>
         <text x="410" y="120" fill="#1c5a94" font-family="Georgia" font-size="11" text-anchor="end">TODAY 88.4%</text>
       </svg>
@@ -3163,7 +3163,7 @@ footer.live-feed{border-top:1px solid #2E7FC4}
     <div class="panel">
       <div class="panel-header">
         <div class="panel-title">OTIF BY DAY &middot; THIS WEEK</div>
-        <div class="panel-sub">APR 17 TO APR 23 &middot; TARGET 95%</div>
+        <div class="panel-sub">JUL 17 TO JUL 23 &middot; TARGET 95%</div>
       </div>
       <div class="waterfall">
         <div class="wf-col"><div class="wf-val">94.2%</div><div class="wf-bar warn" style="height: 72%;"></div><div class="wf-label">Fri 17</div></div>
@@ -3361,22 +3361,22 @@ function runSim() {
   setT('s8v', s8 + ' hrs');
 
   const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
-  const creamShort = Math.max(0, -s7), creamOver = Math.max(0, s7);
+  const slurryShort = Math.max(0, -s7), slurryOver = Math.max(0, s7);
 
   // Multi-KPI sensitivity model (simulated demo heuristics)
   const otifOT = clamp(93.1 - s5*0.5 - s3*0.16 - s8*0.12 - s6*0.16 - s2*0.35 - Math.max(0,-s1)*0.05, 60, 99.5);
-  const otifIF = clamp(97.5 - Math.max(0,-s1)*0.12 - creamShort*0.12 - s2*0.85 - Math.max(0,s4-12)*0.16 - s3*0.10 - s8*0.15, 60, 99.9);
+  const otifIF = clamp(97.5 - Math.max(0,-s1)*0.12 - slurryShort*0.12 - s2*0.85 - Math.max(0,s4-12)*0.16 - s3*0.10 - s8*0.15, 60, 99.9);
   const otif   = otifOT * otifIF / 100;
-  const waste  = clamp(2.8 + creamOver*0.055 + Math.max(0,s1)*0.03 + s3*0.05 + s8*0.06 + creamShort*0.012, 0.5, 12);
-  const cost   = clamp(2.41 + s3*0.012 + s8*0.013 + creamShort*0.009 + creamOver*0.005 + s2*0.02 + s5*0.011 + s6*0.008 + Math.max(0,s4-12)*0.004, 2.0, 4.5);
-  const sla    = clamp(2.1 + (s3+s8)*0.035 + s2*0.10 + s5*0.06 + creamShort*0.012 + creamOver*0.008 + s6*0.01, 1.0, 8);
-  const touch  = clamp(2.3 + (s3+s8)*0.06 + s2*0.15 + s5*0.10 + creamShort*0.022 + creamOver*0.016 + Math.max(0,s4-12)*0.05 + s6*0.02, 0.5, 8);
+  const waste  = clamp(2.8 + slurryOver*0.055 + Math.max(0,s1)*0.03 + s3*0.05 + s8*0.06 + slurryShort*0.012, 0.5, 12);
+  const cost   = clamp(2.41 + s3*0.012 + s8*0.013 + slurryShort*0.009 + slurryOver*0.005 + s2*0.02 + s5*0.011 + s6*0.008 + Math.max(0,s4-12)*0.004, 2.0, 4.5);
+  const sla    = clamp(2.1 + (s3+s8)*0.035 + s2*0.10 + s5*0.06 + slurryShort*0.012 + slurryOver*0.008 + s6*0.01, 1.0, 8);
+  const touch  = clamp(2.3 + (s3+s8)*0.06 + s2*0.15 + s5*0.10 + slurryShort*0.022 + slurryOver*0.016 + Math.max(0,s4-12)*0.05 + s6*0.02, 0.5, 8);
   const baseOtif = otif;
 
-  let cases = Math.round(Math.max(0,-s1)*80 + s2*420 + s3*280 + s8*240 + Math.max(0,s4-12)*110 + s5*450 + s6*140 + creamShort*85 + creamOver*35);
-  let skus = Math.min(8, Math.max(0, Math.round((95 - baseOtif) / 1.4) + (creamShort >= 10 ? 2 : 0) + (creamOver >= 10 ? 1 : 0) + (s8 >= 8 ? 1 : 0)));
+  let cases = Math.round(Math.max(0,-s1)*80 + s2*420 + s3*280 + s8*240 + Math.max(0,s4-12)*110 + s5*450 + s6*140 + slurryShort*85 + slurryOver*35);
+  let skus = Math.min(8, Math.max(0, Math.round((95 - baseOtif) / 1.4) + (slurryShort >= 10 ? 2 : 0) + (slurryOver >= 10 ? 1 : 0) + (s8 >= 8 ? 1 : 0)));
   let cust = Math.min(6, Math.max(0, Math.round((95 - baseOtif) / 2.5)));
-  let rcost = Math.max(0, s3*0.6 + s8*0.6 + Math.max(0,s4-12)*0.15 + s5*1.1 + s6*0.4 + s2*0.9 + creamShort*0.32 + creamOver*0.22);
+  let rcost = Math.max(0, s3*0.6 + s8*0.6 + Math.max(0,s4-12)*0.15 + s5*1.1 + s6*0.4 + s2*0.9 + slurryShort*0.32 + slurryOver*0.22);
 
   setT('outOtif', baseOtif.toFixed(1) + '%');
   const delta = baseOtif - 95;
@@ -3424,9 +3424,9 @@ function runSim() {
 
   // Dominant scenario detection
   let type = 'base';
-  if (s8 >= 8) type = 'cream-line';
-  else if (creamOver >= 15) type = 'cream-glut';
-  else if (creamShort >= 15) type = 'cream-short';
+  if (s8 >= 8) type = 'slurry-line';
+  else if (slurryOver >= 15) type = 'slurry-glut';
+  else if (slurryShort >= 15) type = 'slurry-short';
   else if (s3 >= 8) type = 'line-down';
   else if (s5 >= 2 || (s1 <= -6 && s5 >= 1)) type = 'storm';
   else if (s4 >= 20) type = 'rush';
@@ -3454,25 +3454,25 @@ function runSim() {
       ['RV-L1', 'no change', 'Gearsteer 12oz', 'Sat 06:00 shift', 'Weekend recovery run', '5,600', '$0.8K'],
       ['DISPATCH', '12 trucks', '14 trucks', 'Fri', 'Two added loads for rush volume', '15,000', '$1.9K']
     ],
-    'cream-short': [
-      ['RV-L2', 'Viscosity Vice 12oz 8.2K', 'Viscosity Vice 12oz 6.1K', 'Thu trim', 'Cream allocated to contracted commitments first', '6,100', '$0.4K'],
+    'slurry-short': [
+      ['RV-L2', 'Viscosity Vice 12oz 8.2K', 'Viscosity Vice 12oz 6.1K', 'Thu trim', 'Slurry allocated to contracted commitments first', '6,100', '$0.4K'],
       ['RV-L2', 'Piston Porter 8oz 9.4K', 'Piston Porter 8oz 7.9K', 'Fri push', 'Blend at light end of spec, inside standard', '7,900', '$0.6K'],
-      ['LK-L2', 'Sump-thing 8oz Fri', 'Sump-thing 8oz Mon', '+72 hrs', 'Culture set re-timed to next cream arrival', '3,700', '$0.9K'],
-      ['PROCURE', 'none', '2 spot cream loads', 'Fri 06:00 delivery', 'Cover Viscosity Vice contract volume', '9,600 gal', '$8.4K'],
-      ['COMMERCIAL', 'none', 'Allocation notice', 'Today 16:00', 'Notify non-contract accounts of cream allocation', '-', '-']
+      ['LK-L2', 'Sump-thing 8oz Fri', 'Sump-thing 8oz Mon', '+72 hrs', 'Culture set re-timed to next slurry arrival', '3,700', '$0.9K'],
+      ['PROCURE', 'none', '2 spot graphite slurry loads', 'Fri 06:00 delivery', 'Cover Viscosity Vice contract volume', '9,600 gal', '$8.4K'],
+      ['COMMERCIAL', 'none', 'Allocation notice', 'Today 16:00', 'Notify non-contract accounts of slurry allocation', '-', '-']
     ],
-    'cream-glut': [
+    'slurry-glut': [
       ['RV-L2', 'Piston Porter 8oz 9.4K', 'Piston Porter 8oz 12.6K', 'Fri extended run', 'Absorb surplus into best-margin SKU', '12,600', '$1.2K'],
       ['RV-L2', 'idle Saturday', 'Viscosity Vice 12oz 4.2K', 'Sat 06:00 added', 'Added run against DC forward demand', '4,200', '$1.8K'],
       ['BULK', 'none', 'Reclaim diversion 18K lb', 'Fri PM', 'Surplus concentrate to reprocessing partner', '18K lb', '$0.9K'],
       ['SPOT', 'none', 'Spot sale 2 tankers', 'Sat', 'Sell remainder inside the freshness window', '2 loads', 'revenue $6.2K'],
-      ['QA', 'standard sampling', 'Extended cream hold checks', 'Fri-Sun', 'Guard spoilage risk on held raw cream', '-', '$0.3K']
+      ['QA', 'standard sampling', 'Extended slurry hold checks', 'Fri-Sun', 'Guard spoilage risk on held raw graphite slurry', '-', '$0.3K']
     ],
-    'cream-line': [
+    'slurry-line': [
       ['RV-L2', 'Viscosity Vice 12oz (running)', 'DOWN, seal failure', 'Now', 'Seal kit expedited, repair ETA 4 hrs', '0', '$1.9K'],
       ['LK-L2', 'Static Stout 12oz', 'Static Stout, then Piston Porter 8oz', 'Fri insert after CIP', 'Absorb RV-L2 backlog on the brewed line', '6,200', '$1.4K'],
       ['RV-L2', 'Piston Porter 8oz Fri', 'Piston Porter 8oz Sat 06:00', '+14 hrs', 'Resume after repair validation batch', '9,400', '$0.8K'],
-      ['RAW', 'cream to RV-L2', 'Chill hold + reclaim divert', 'Now', 'Hold 12K lb, divert overflow to reclaim', '12K lb', '$0.7K']
+      ['RAW', 'slurry to RV-L2', 'Chill hold + reclaim divert', 'Now', 'Hold 12K lb, divert overflow to reclaim', '12K lb', '$0.7K']
     ],
     'line-down': [
       ['LK-L3', 'standby', 'Gearsteer 1 Gal takeover', 'Fri 06:00', 'Absorb RV-L1 volume on the reserve line', '11,800', '$2.6K'],
@@ -3493,9 +3493,9 @@ function runSim() {
   if (av && ac) {
     const conf = Math.max(58, Math.min(96, Math.round(96 - (95 - baseOtif) * 1.6)));
     let txt;
-    if (type === 'cream-glut') txt = 'Cream is running ' + creamOver + '% over plan. Divert surplus to the reprocessing partner, add a Saturday Piston Porter run on RV-L2 and spot-sell the remainder inside the freshness window. Waste holds at ' + waste.toFixed(1) + '% and the added run is margin positive.';
-    else if (type === 'cream-short') txt = 'Cream is ' + creamShort + '% short. Protect contracted SKUs first: allocate remaining cream to Viscosity Vice commitments, blend Piston Porter at the light end of spec, re-time Monday Sump-thing and buy two spot loads at $8.4K. In-Full holds at ' + otifIF.toFixed(1) + '%.';
-    else if (type === 'cream-line') txt = 'RV-L2 is down on a seal failure. Expedite the seal kit (4 hour ETA), move Piston Porter behind the LK-L2 Static Stout run, chill-hold bulk cream and divert overflow to reclaim. Full recovery by Saturday 06:00.';
+    if (type === 'slurry-glut') txt = 'Slurry is running ' + slurryOver + '% over plan. Divert surplus to the reprocessing partner, add a Saturday Piston Porter run on RV-L2 and spot-sell the remainder inside the freshness window. Waste holds at ' + waste.toFixed(1) + '% and the added run is margin positive.';
+    else if (type === 'slurry-short') txt = 'Slurry is ' + slurryShort + '% short. Protect contracted SKUs first: allocate remaining slurry to Viscosity Vice commitments, blend Piston Porter at the light end of spec, re-time Monday Sump-thing and buy two spot loads at $8.4K. In-Full holds at ' + otifIF.toFixed(1) + '%.';
+    else if (type === 'slurry-line') txt = 'RV-L2 is down on a seal failure. Expedite the seal kit (4 hour ETA), move Piston Porter behind the LK-L2 Static Stout run, chill-hold bulk slurry and divert overflow to reclaim. Full recovery by Saturday 06:00.';
     else if (type === 'line-down') txt = 'RV-L1 is down. Activate LK-L3 to take the Gearsteer 1 Gallon volume, extend the CHARGED run two hours and hold the maintenance window to 12 hours. Omnimart stays whole; the Voltway recovery slips to Saturday.';
     else if (type === 'storm') txt = 'Pre-stage Friday PM collections on the four highest-volume routes and move the Voltway recovery truck to Friday 22:00, ahead of the storm window. Protects $41K of committed revenue for $3.1K of overtime.';
     else if (baseOtif >= 93) txt = 'Hold the current plan. The network absorbs this scenario within normal buffers. No schedule rewrite needed; keep LK-L3 in reserve.';
@@ -3513,9 +3513,9 @@ function loadPreset(p) {
   if (p === 'storm') { set('s1', -8); set('s4', 15); set('s5', 3); set('s6', 5); }
   else if (p === 'rush') { set('s4', 25); }
   else if (p === 'line-down') { set('s3', 12); set('s4', 15); }
-  else if (p === 'cream-short') { set('s7', -30); set('s4', 15); }
-  else if (p === 'cream-glut') { set('s7', 35); }
-  else if (p === 'cream-line') { set('s8', 12); set('s7', 15); }
+  else if (p === 'slurry-short') { set('s7', -30); set('s4', 15); }
+  else if (p === 'slurry-glut') { set('s7', 35); }
+  else if (p === 'slurry-line') { set('s8', 12); set('s7', 15); }
   else { set('s4', 15); }
   runSim();
 }
@@ -3533,7 +3533,7 @@ const ASKDB = {
   'path95': { q: 'Show me the cheapest path to 95% OTIF', conf: 'CONFIDENCE 89%',
     a: 'Three moves close the gap this week for about <strong>$6.9K</strong>: activate LK-L3 for the Voltway top-up (+1.9pp), expedite Kestrel Pack PO-88412 by one day (+0.6pp) and pull 1.6K cases of Southern DC buffer to Mesa (+1.1pp). Together they land the week at <strong>95.4%</strong> with 0.4pp of headroom. All three are actionable today.' },
   'changed': { q: 'What changed since yesterday?', conf: 'VERIFIED FROM CHANGE LOG',
-    a: 'One change order: <strong>CO-20260423-004</strong>, the Week 17 revision covering the Omnimart 15K case rush and the Route D-03 recovery. LK-L3 activates Friday 06:00, the Gearsteer 12oz run moves to Saturday and Voltway takes a partial with Saturday recovery. Projected week OTIF moved from 92.7% to <strong>94.1%</strong>. Five of seven stakeholder acknowledgements are in; two are pending.' },
+    a: 'One change order: <strong>CO-20260723-004</strong>, the Week 30 revision covering the Omnimart 15K case rush and the Route D-03 recovery. LK-L3 activates Friday 06:00, the Gearsteer 12oz run moves to Saturday and Voltway takes a partial with Saturday recovery. Projected week OTIF moved from 92.7% to <strong>94.1%</strong>. Five of seven stakeholder acknowledgements are in; two are pending.' },
   'otif': { q: 'Why is OTIF trending down this week?', conf: 'CONFIDENCE 91%', critical: true,
     pre: '<div style="display:grid;gap:6px;">' +
       '<div class="cpm-alert-row"><span class="chip bad">CRITICAL</span><strong>Route D-03 Slagmoor running 40 min late</strong><span class="tail">-3,400 gal &middot; OTIF -1.2pp &middot; Voltway Fri</span></div>' +
@@ -3545,7 +3545,7 @@ const ASKDB = {
   'correlate': { q: 'How do 14,206 signals become 312 events?', conf: 'CONFIDENCE 95%',
     a: 'The correlation layer clusters raw signals into business events and throws away the noise. Fourteen reefer temperature readings on Route C-03 became <strong>one cold chain event</strong>. Forty-one fill counter ticks on RV-L1 became one batch progress event. 312 events survived from 14,206 signals: a <strong>45 to 1 compression</strong>, so the exception engine reasons about the plant, not the sensors.' },
   'exceptions': { q: 'What raised the 31 exceptions today?', conf: 'CONFIDENCE 92%',
-    a: 'An event becomes an exception when it breaks a rule, a threshold or a prediction. Today: <strong>9 supply</strong> (Route D-03 and the cream position), <strong>7 inventory variances</strong> (WMS vs ERP), <strong>6 schedule conflicts</strong> (the Omnimart rush collisions), <strong>5 quality and cold chain</strong> (led by C-03) and <strong>4 demand signals</strong> (early Founders Day cream uplift). Every exception is priced on arrival, which is how the queue self-sorts by dollars.' },
+    a: 'An event becomes an exception when it breaks a rule, a threshold or a prediction. Today: <strong>9 supply</strong> (Route D-03 and the slurry position), <strong>7 inventory variances</strong> (WMS vs ERP), <strong>6 schedule conflicts</strong> (the Omnimart rush collisions), <strong>5 quality and cold chain</strong> (led by C-03) and <strong>4 demand signals</strong> (early Founders Day slurry uplift). Every exception is priced on arrival, which is how the queue self-sorts by dollars.' },
   'auto': { q: 'What did the AI resolve on its own?', conf: 'VERIFIED FROM ACTION LOG',
     a: '<strong>24 of 31</strong>, all inside the guardrails: impact under $2.5K and confidence at 90% or better. The reroute of 6,200 CORE cases to Lakeside, 24 WMS variances auto-approved with 6 flagged, the Viscosity Vice surge absorbed without an extra changeover and a cycle count dispatched for the 480-unit short. Worth <strong>$18.4K protected</strong> plus 3.2 planner hours today, every action reversible for 24 hours.' },
   'humans': { q: 'What went to humans and why?', conf: 'CONFIDENCE 96%',
@@ -3610,14 +3610,14 @@ const AXN = {
     src: 'SOURCES: BOTBEVCO SIGNAL FABRIC &middot; OTIF FEED &middot; ACTION LOG', fu: ['margin', 'critical', 'board3'] },
 
   'margin': { q: 'Where is margin leaking right now?', conf: 'CONFIDENCE HIGH &middot; 93%',
-    body: 'Three leaks, all traced and priced. The cream shortage is forcing spot purchases at an <strong>$8.4K weekly premium</strong> and rerouting cream SKUs between plants adds $2.1K of changeover and freight. Expedited freight still slipped through at $5.1K this month even after I avoided $18.4K more. The largest exposure is OTIF penalties: below 96% the contract exposure runs about <strong>$23K per month</strong>, led by Voltway and the Omnimart MABD window.' +
+    body: 'Three leaks, all traced and priced. The slurry shortage is forcing spot purchases at an <strong>$8.4K weekly premium</strong> and rerouting slurry SKUs between plants adds $2.1K of changeover and freight. Expedited freight still slipped through at $5.1K this month even after I avoided $18.4K more. The largest exposure is OTIF penalties: below 96% the contract exposure runs about <strong>$23K per month</strong>, led by Voltway and the Omnimart MABD window.' +
       '<div style="margin-top:10px;">' +
       '<div class="aqb"><span>OTIF penalty exposure</span><div class="aqb-t"><span style="width:100%;background:var(--status-bad);"></span></div><span class="aqb-v">$23K/mo</span></div>' +
-      '<div class="aqb"><span>Cream spot premium</span><div class="aqb-t"><span style="width:37%;background:var(--status-warn);"></span></div><span class="aqb-v">$8.4K/wk</span></div>' +
+      '<div class="aqb"><span>Slurry spot premium</span><div class="aqb-t"><span style="width:37%;background:var(--status-warn);"></span></div><span class="aqb-v">$8.4K/wk</span></div>' +
       '<div class="aqb"><span>Expedite freight paid</span><div class="aqb-t"><span style="width:22%;"></span></div><span class="aqb-v">$5.1K/mo</span></div>' +
-      '<div class="aqb"><span>Cream reroute cost</span><div class="aqb-t"><span style="width:9%;"></span></div><span class="aqb-v">$2.1K/wk</span></div>' +
+      '<div class="aqb"><span>Slurry reroute cost</span><div class="aqb-t"><span style="width:9%;"></span></div><span class="aqb-v">$2.1K/wk</span></div>' +
       '</div>',
-    src: 'SOURCES: ORACLE FUSION GL &middot; FREIGHT AUDIT &middot; OTIF FEED &middot; BOTBEVCO KPI MART', fu: ['cream2wk', 'otifNow', 'savedweek'] },
+    src: 'SOURCES: ORACLE FUSION GL &middot; FREIGHT AUDIT &middot; OTIF FEED &middot; BOTBEVCO KPI MART', fu: ['slurry2wk', 'otifNow', 'savedweek'] },
 
   'otifNow': { q: 'What is our OTIF today and where is it heading?', conf: 'CONFIDENCE HIGH &middot; 94%',
     body: 'Composite OTIF is <strong>90.8%</strong> today: on-time 93.1% and in-full 97.5%, so lateness is the problem, not shortage. The recovery in flight lifts the projection to <strong>94.1% by Sunday</strong> and 96% is reachable next week if Kestrel Pack PO-88412 lands Wednesday. One nuance on Omnimart: MABD is measured on arrival at their DC, not on our ship time, so Friday loads must clear the Riverside dock by 14:00 to stay inside the window.' +
@@ -3630,12 +3630,12 @@ const AXN = {
       '</div>',
     src: 'SOURCES: OTIF FEED &middot; EDI 214 CARRIER STATUS &middot; ORACLE OTM', fu: ['mabd', 'shortrisk', 'margin'] },
 
-  'cream2wk': { q: 'What happens if the cream shortage lasts two more weeks?', conf: 'CONFIDENCE MEDIUM &middot; 78%',
+  'slurry2wk': { q: 'What happens if the slurry shortage lasts two more weeks?', conf: 'CONFIDENCE MEDIUM &middot; 78%',
     body: 'Two more weeks at the current 30% shortfall costs about <strong>$19K</strong> if we change nothing: $16.8K of spot premium plus $2.2K of schedule churn. Three plays are on the table.' +
       '<div class="aq-opt"><span class="ol">A</span><span>Keep buying spot loads. Protects every contract at $8.4K per week of premium.</span></div>' +
       '<div class="aq-opt"><span class="ol">B</span><span>Put non-contract accounts on allocation. Saves the premium but puts $9.2K of weekly revenue and goodwill at risk.</span></div>' +
-      '<div class="aq-opt rec"><span class="ol">C</span><span><strong>Recommended.</strong> Re-time the brewed runs and blend Piston Porter at the light end of spec, inside standard. Frees about 11% of cream demand for $1.5K of margin cost.</span></div>' +
-      '<div style="margin-top:8px;">My recommended play is C plus one spot load per week: total cost near <strong>$5.9K per week</strong>, every contract stays whole and In-Full holds above 97%. The Scenarios tab has this loaded as the CREAM SHORT preset.</div>',
+      '<div class="aq-opt rec"><span class="ol">C</span><span><strong>Recommended.</strong> Re-time the brewed runs and blend Piston Porter at the light end of spec, inside standard. Frees about 11% of slurry demand for $1.5K of margin cost.</span></div>' +
+      '<div style="margin-top:8px;">My recommended play is C plus one spot load per week: total cost near <strong>$5.9K per week</strong>, every contract stays whole and In-Full holds above 97%. The Scenarios tab has this loaded as the SLURRY SHORT preset.</div>',
     src: 'SOURCES: BASE STOCK BALANCE MODEL &middot; ORACLE FUSION &middot; SCENARIOS ENGINE', fu: ['margin', 'sealed-fill', 'huddle'] },
 
   'wcap': { q: 'How much working capital is trapped in inventory?', conf: 'CONFIDENCE HIGH &middot; 91%',
@@ -3663,7 +3663,7 @@ const AXN = {
     src: 'SOURCES: ACTION LOG &middot; CHANGE BROADCAST &middot; FREIGHT AUDIT', fu: ['allplants', 'board3'] },
 
   'allplants': { q: 'What would this look like across all plants?', conf: 'CONFIDENCE MEDIUM &middot; 74%',
-    body: 'Scaled to the full network, the pilot pattern implies <strong>$1.8M to $3.2M of annual value per $100M of revenue</strong>: roughly 40% service and penalty avoidance, 35% freight, waste and cream optimization and 25% working capital and planner capacity. That is the basis of the <strong>$5.5M annual run rate</strong> in the Value Case, against the $4.0M Phase 1 investment over 16 months.' +
+    body: 'Scaled to the full network, the pilot pattern implies <strong>$1.8M to $3.2M of annual value per $100M of revenue</strong>: roughly 40% service and penalty avoidance, 35% freight, waste and slurry optimization and 25% working capital and planner capacity. That is the basis of the <strong>$5.5M annual run rate</strong> in the Value Case, against the $4.0M Phase 1 investment over 16 months.' +
       '<div class="aq-stats"><div class="aq-stat"><div class="v">$1.8M to $3.2M</div><div class="l">PER $100M REVENUE</div></div><div class="aq-stat"><div class="v">$5.5M</div><div class="l">RUN RATE AT TARGET</div></div><div class="aq-stat"><div class="v">$4.0M</div><div class="l">PHASE 1 INVEST</div></div></div>',
     src: 'SOURCES: VALUE CASE MODEL &middot; BOTBEVCO KPI MART &middot; INDUSTRY BENCHMARKS', fu: ['phase1', 'board3'] },
 
@@ -3676,17 +3676,17 @@ const AXN = {
     src: 'SOURCES: EDI ORDER FLOW &middot; COMMITMENT HEATMAP &middot; OTIF FEED', fu: ['otifNow', 'huddle'] },
 
   'august': { q: 'What is the forecast telling us for August?', conf: 'CONFIDENCE MEDIUM &middot; 76%',
-    body: 'August demand comes in about <strong>6.5% above July</strong>, led by the school base stock restart in the last two weeks and early fall cream demand. Forecast MAPE has improved from 60.8 at baseline to <strong>38.4</strong>, with the widest remaining error on cream SKUs. I recommend locking the Kestrel Pack carton order and the cream supply plan by August 7.' +
+    body: 'August demand comes in about <strong>6.5% above July</strong>, led by the school base stock restart in the last two weeks and early fall slurry demand. Forecast MAPE has improved from 60.8 at baseline to <strong>38.4</strong>, with the widest remaining error on slurry SKUs. I recommend locking the Kestrel Pack carton order and the slurry supply plan by August 7.' +
       '<div style="margin-top:10px;">' +
       '<div class="aqb"><span>CORE gallons</span><div class="aqb-t"><span style="width:90%;"></span></div><span class="aqb-v">+9%</span></div>' +
-      '<div class="aqb"><span>Cream SKUs</span><div class="aqb-t"><span style="width:70%;background:var(--status-warn);"></span></div><span class="aqb-v">+7%</span></div>' +
+      '<div class="aqb"><span>Slurry SKUs</span><div class="aqb-t"><span style="width:70%;background:var(--status-warn);"></span></div><span class="aqb-v">+7%</span></div>' +
       '<div class="aqb"><span>Brewed</span><div class="aqb-t"><span style="width:40%;"></span></div><span class="aqb-v">+4%</span></div>' +
       '<div class="aqb"><span>Fluid conventional</span><div class="aqb-t"><span style="width:20%;"></span></div><span class="aqb-v">+2%</span></div>' +
       '</div>',
     src: 'SOURCES: DEMAND ENGINE &middot; EDI HISTORY &middot; SCHOOL BID CALENDAR', fu: ['sealed-fill', 'shortrisk'] },
 
   'plantfocus': { q: 'Which plant needs my attention today?', conf: 'CONFIDENCE HIGH &middot; 92%',
-    body: '<strong>Riverside.</strong> It carries all three of today&rsquo;s live issues: the RV-L1 recovery batch after the Route D-03 late arrival, the cream position on RV-L2 and the Friday 14:00 dock cutoff for the Omnimart loads. Lakeside is steady at 94.1% OEE with CIP on schedule and LK-L3 prepped for the Friday 06:00 activation. If you walk one floor today, walk Riverside at the 10:00 shift overlap.' +
+    body: '<strong>Riverside.</strong> It carries all three of today&rsquo;s live issues: the RV-L1 recovery batch after the Route D-03 late arrival, the slurry position on RV-L2 and the Friday 14:00 dock cutoff for the Omnimart loads. Lakeside is steady at 94.1% OEE with CIP on schedule and LK-L3 prepped for the Friday 06:00 activation. If you walk one floor today, walk Riverside at the 10:00 shift overlap.' +
       '<div class="aq-stats"><div class="aq-stat"><div class="v">Riverside</div><div class="l">3 LIVE ISSUES &middot; WALK AT 10:00</div></div><div class="aq-stat"><div class="v">94.1%</div><div class="l">LAKESIDE OEE &middot; STEADY</div></div><div class="aq-stat"><div class="v">06:00</div><div class="l">LK-L3 FRIDAY ACTIVATION</div></div></div>',
     src: 'SOURCES: MES &middot; OEE COUNTERS &middot; ROUTE TELEMETRY', fu: ['huddle', 'sync'] },
 
@@ -3703,7 +3703,7 @@ const AXN = {
       '<div class="aq-tl">' +
       '<div class="tl-i"><span class="tl-m">DAY 90</span>First quick wins live: WMS variance auto-clear expansion and the OTIF root cause feed</div>' +
       '<div class="tl-i"><span class="tl-m">MONTH 6</span>Exception engine running at both plants &middot; roughly $180K annualized</div>' +
-      '<div class="tl-i"><span class="tl-m">MONTH 10</span>Forecast and cream optimization live &middot; past a $2M run rate</div>' +
+      '<div class="tl-i"><span class="tl-m">MONTH 10</span>Forecast and slurry optimization live &middot; past a $2M run rate</div>' +
       '<div class="tl-i"><span class="tl-m">MONTH 16</span>Full $5.5M annual run rate at target KPIs</div>' +
       '</div>' +
       '<div style="margin-top:8px;">The $4.0M investment breaks even on a run rate basis around month 13 and the payback clock in the Value Case reads 14 months from go-live.</div>',
@@ -3714,7 +3714,7 @@ const AXN = {
       '<div class="aq-rank"><span class="n">1</span><span><strong>WMS variance auto-clear expansion</strong> &middot; returns 3.2 planner hours per day</span><span class="chip auto">QUEUED</span></div>' +
       '<div class="aq-rank"><span class="n">2</span><span><strong>OTIF root cause feed</strong> &middot; retires the Monday spreadsheet hunt</span><span class="chip auto">QUEUED</span></div>' +
       '<div class="aq-rank"><span class="n">3</span><span><strong>Expedite pre-approval guardrails</strong> &middot; targets the $5.1K monthly freight leak</span><span class="chip auto">QUEUED</span></div>' +
-      '<div class="aq-rank"><span class="n">4</span><span><strong>Cream position daily digest</strong> &middot; to commercial by 07:00 each day</span><span class="chip auto">QUEUED</span></div>',
+      '<div class="aq-rank"><span class="n">4</span><span><strong>Slurry position daily digest</strong> &middot; to commercial by 07:00 each day</span><span class="chip auto">QUEUED</span></div>',
     src: 'SOURCES: QUICK WINS LOG &middot; PHASE 1 PLAN', fu: ['phase1', 'savedweek'] },
 
   'sealed-fill': { q: 'What if we add a second sealed-fill line?', conf: 'CONFIDENCE MEDIUM &middot; 71%',
@@ -3738,7 +3738,7 @@ const AXN = {
       '<div class="cpm-alert-row"><span class="chip bad">CRITICAL</span><strong>Cold chain excursion &middot; Route C-03</strong><span class="tail">31K gal on hold &middot; lab panel due 14:00</span></div>' +
       '</div>' +
       'Both alerts are priced and owned. D-03 cascades into the RV-L1 CORE batch and the Voltway Friday commitment, which is why the Saturday recovery decision is on your desk by 16:00. C-03 is contained: the load is isolated, the $38K exposure is capped and QA reports at 14:00. No other exception is outside guardrails.',
-    src: 'SOURCES: LIVE TELEMETRY &middot; QA LAB FEED &middot; ACTION LOG', fu: ['cream2wk', 'otifNow', 'huddle'] }
+    src: 'SOURCES: LIVE TELEMETRY &middot; QA LAB FEED &middot; ACTION LOG', fu: ['slurry2wk', 'otifNow', 'huddle'] }
 };
 
 // Merge the V3.1/V4.1 answer bank into the unified page db so every legacy trigger still lands.
@@ -3811,8 +3811,8 @@ document.getElementById('askInput').addEventListener('keydown', function(ev) { i
 // Critical alerts button.
 document.getElementById('critBtn').addEventListener('click', function() { askGo('critical'); });
 
-// V5.1 EXECUTIVE BRIEFING autoplay: status, margin leak, cream crisis, AI savings, board numbers.
-const BRIEF_SEQ = ['status', 'margin', 'cream2wk', 'savedweek', 'board3'];
+// V5.1 EXECUTIVE BRIEFING autoplay: status, margin leak, slurry crisis, AI savings, board numbers.
+const BRIEF_SEQ = ['status', 'margin', 'slurry2wk', 'savedweek', 'board3'];
 let briefTimers = [];
 function stopBrief() {
   briefTimers.forEach(clearTimeout);
